@@ -1,0 +1,100 @@
+[2020-07-30 22:01:55,661] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+[2020-07-30 22:01:55,766] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+[2020-07-30 22:01:55,768] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:01:55,768] {{taskinstance.py:835}} INFO - Starting attempt 1 of 2
+[2020-07-30 22:01:55,772] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:01:55,823] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-25T00:00:00+00:00
+[2020-07-30 22:01:55,825] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-25T00:00:00+00:00', '--job_id', '27', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmptffywdx8']
+[2020-07-30 22:02:01,758] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv [2020-07-30 22:02:01,756] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=7708
+[2020-07-30 22:02:01,899] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-07-30 22:02:01,900] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv   """)
+[2020-07-30 22:02:02,840] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv [2020-07-30 22:02:02,827] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-07-30 22:02:06,177] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv [2020-07-30 22:02:06,168] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-07-30 22:02:06,385] {{base_task_runner.py:115}} INFO - Job 27: Subtask clean_raw_csv [2020-07-30 22:02:06,383] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [running]> on host 6097e8989e8b
+[2020-07-30 22:02:06,448] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-25T00:00:00+00:00
+[2020-07-30 22:02:18,422] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-07-30 22:02:20,523] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 22:02:20,515[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+[2020-07-30 22:02:20,594] {{helpers.py:319}} INFO - Sending Signals.SIGTERM to GPID 7708
+[2020-07-30 22:02:20,774] {{helpers.py:297}} INFO - Process psutil.Process(pid=7708, status='terminated') (7708) terminated with exit code -15
+[2020-07-30 22:02:20,775] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 22:02:20,775[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 20:46:04,986] {{taskinstance.py:616}} time Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+[2020-08-04 20:46:05,032] {{taskinstance.py:616}} time Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+[2020-08-04 20:46:05,037] {{taskinstance.py:834}} time 
+--------------------------------------------------------------------------------
+[2020-08-04 20:46:05,040] {{taskinstance.py:835}} time Starting attempt 1 of 2
+[2020-08-04 20:46:05,040] {{taskinstance.py:836}} time 
+--------------------------------------------------------------------------------
+[2020-08-04 20:46:05,150] {{taskinstance.py:855}} time Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-25T00:00:00+00:00
+[2020-08-04 20:46:05,158] {{base_task_runner.py:133}} time Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-25T00:00:00+00:00', '--job_id', '18', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmp2mtklz_c']
+[2020-08-04 20:46:11,566] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv [2020-08-04 20:46:11,565] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1554
+[2020-08-04 20:46:11,679] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 20:46:11,679] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv   """)
+[2020-08-04 20:46:12,402] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv [2020-08-04 20:46:12,399] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 20:46:15,526] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv [2020-08-04 20:46:15,525] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-04 20:46:15,932] {{base_task_runner.py:115}} time Job 18: Subtask clean_raw_csv [2020-08-04 20:46:15,922] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [running]> on host 46a88ec199b8
+[2020-08-04 20:46:16,037] {{python_operator.py:105}} time Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-25T00:00:00+00:00
+[2020-08-04 20:46:31,084] {{python_operator.py:114}} time Done. Returned value was: None
+[2020-08-04 20:46:35,002] {{logging_mixin.py:95}} time [[34m2020-08-04 20:46:34,991[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+[2020-08-04 20:46:35,056] {{helpers.py:319}} time Sending Signals.SIGTERM to GPID 1554
+[2020-08-04 20:46:35,255] {{helpers.py:297}} time Process psutil.Process(pid=1554, status='terminated') (1554) terminated with exit code -15
+[2020-08-04 20:46:35,257] {{logging_mixin.py:95}} time [[34m2020-08-04 20:46:35,256[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+
+--------------------------------------------------------------------------------
+Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-25T00:00:00+00:00
+Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-25T00:00:00+00:00', '--job_id', '18', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmp3fsezhc5']
+Job 18: Subtask clean_raw_csv [2020-08-04 20:52:24,407] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1451
+Job 18: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+Job 18: Subtask clean_raw_csv   """)
+Job 18: Subtask clean_raw_csv [2020-08-04 20:52:25,785] {{__init__.py:51}} INFO - Using executor LocalExecutor
+Job 18: Subtask clean_raw_csv [2020-08-04 20:52:31,754] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+Job 18: Subtask clean_raw_csv [2020-08-04 20:52:32,831] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [running]> on host 6a822f9627d0
+Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-25T00:00:00+00:00
+Done. Returned value was: None
+[[34m2020-08-04 20:52:54,370[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+Sending Signals.SIGTERM to GPID 1451
+Process psutil.Process(pid=1451, status='terminated') (1451) terminated with exit code -15
+[[34m2020-08-04 20:52:54,804[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+message ----> Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+message ----> Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [queued]>
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Starting attempt 1 of 2
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-25T00:00:00+00:00
+message ----> Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-25T00:00:00+00:00', '--job_id', '18', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmpinnfciyq']
+message ----> Job 18: Subtask clean_raw_csv [2020-08-04 21:10:27,504] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1961
+message ----> Job 18: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+message ----> Job 18: Subtask clean_raw_csv   """)
+message ----> Job 18: Subtask clean_raw_csv [2020-08-04 21:10:29,564] {{__init__.py:51}} INFO - Using executor LocalExecutor
+message ----> Job 18: Subtask clean_raw_csv [2020-08-04 21:10:36,018] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+message ----> Job 18: Subtask clean_raw_csv [2020-08-04 21:10:37,368] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-25T00:00:00+00:00 [running]> on host 0885e5a330eb
+message ----> Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-25T00:00:00+00:00
+message ----> Done. Returned value was: None
+message ----> [[34m2020-08-04 21:10:57,589[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+message ----> Sending Signals.SIGTERM to GPID 1961
+message ----> Process psutil.Process(pid=1961, status='terminated') (1961) terminated with exit code -15
+message ----> [[34m2020-08-04 21:10:58,120[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

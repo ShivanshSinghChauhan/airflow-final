@@ -1,0 +1,29 @@
+message ----> Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-08-04T21:14:42.793017+00:00 [queued]>
+message ----> Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-08-04T21:14:42.793017+00:00 [queued]>
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Starting attempt 1 of 1
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Executing <Task(PythonOperator): data_collection> on 2020-08-04T21:14:42.793017+00:00
+message ----> Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-08-04T21:14:42.793017+00:00', '--job_id', '63', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmp8483luoo']
+message ----> Job 63: Subtask data_collection [2020-08-04 21:14:56,757] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=3544
+message ----> Job 63: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+message ----> Job 63: Subtask data_collection   """)
+message ----> Job 63: Subtask data_collection [2020-08-04 21:14:57,071] {{__init__.py:51}} INFO - Using executor LocalExecutor
+message ----> Job 63: Subtask data_collection [2020-08-04 21:14:59,623] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+message ----> Job 63: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+message ----> Job 63: Subtask data_collection   DeprecationWarning)
+message ----> Job 63: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+message ----> Job 63: Subtask data_collection   DeprecationWarning)
+message ----> Job 63: Subtask data_collection [2020-08-04 21:15:01,311] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-08-04T21:14:42.793017+00:00 [running]> on host 0885e5a330eb
+message ----> Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-08-04T21:14:42.793017+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-08-04T21:14:42.793017+00:00
+message ----> Done. Returned value was: None
+message ----> [[34m2020-08-04 21:15:03,031[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+message ----> Sending Signals.SIGTERM to GPID 3544
+message ----> Process psutil.Process(pid=3544, status='terminated') (3544) terminated with exit code -15
+message ----> [[34m2020-08-04 21:15:03,190[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

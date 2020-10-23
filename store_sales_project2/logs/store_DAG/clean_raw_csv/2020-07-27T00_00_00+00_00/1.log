@@ -1,0 +1,88 @@
+[2020-07-30 22:02:04,878] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+[2020-07-30 22:02:05,049] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+[2020-07-30 22:02:05,054] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:02:05,055] {{taskinstance.py:835}} INFO - Starting attempt 1 of 2
+[2020-07-30 22:02:05,056] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:02:05,187] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-27T00:00:00+00:00
+[2020-07-30 22:02:05,191] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-27T00:00:00+00:00', '--job_id', '32', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmph8g90_11']
+[2020-07-30 22:02:16,747] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv [2020-07-30 22:02:16,747] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=7781
+[2020-07-30 22:02:17,281] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-07-30 22:02:17,282] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv   """)
+[2020-07-30 22:02:20,726] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv [2020-07-30 22:02:20,714] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-07-30 22:02:25,464] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv [2020-07-30 22:02:25,458] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-07-30 22:02:25,629] {{base_task_runner.py:115}} INFO - Job 32: Subtask clean_raw_csv [2020-07-30 22:02:25,629] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [running]> on host 6097e8989e8b
+[2020-07-30 22:02:25,689] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-27T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-27T00:00:00+00:00
+[2020-07-30 22:02:30,724] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-07-30 22:02:34,798] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 22:02:34,795[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 20:46:39,202] {{taskinstance.py:616}} time Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+[2020-08-04 20:46:39,457] {{taskinstance.py:616}} time Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+[2020-08-04 20:46:39,459] {{taskinstance.py:834}} time 
+--------------------------------------------------------------------------------
+[2020-08-04 20:46:39,464] {{taskinstance.py:835}} time Starting attempt 1 of 2
+[2020-08-04 20:46:39,465] {{taskinstance.py:836}} time 
+--------------------------------------------------------------------------------
+[2020-08-04 20:46:39,524] {{taskinstance.py:855}} time Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-27T00:00:00+00:00
+[2020-08-04 20:46:39,528] {{base_task_runner.py:133}} time Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-27T00:00:00+00:00', '--job_id', '25', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmp46pan070']
+[2020-08-04 20:46:54,379] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv [2020-08-04 20:46:54,373] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1724
+[2020-08-04 20:46:54,542] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 20:46:54,543] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv   """)
+[2020-08-04 20:46:56,054] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv [2020-08-04 20:46:56,045] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 20:47:01,244] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv [2020-08-04 20:47:01,243] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-04 20:47:02,715] {{base_task_runner.py:115}} time Job 25: Subtask clean_raw_csv [2020-08-04 20:47:02,704] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [running]> on host 46a88ec199b8
+[2020-08-04 20:47:02,999] {{python_operator.py:105}} time Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-27T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-27T00:00:00+00:00
+[2020-08-04 20:47:10,277] {{python_operator.py:114}} time Done. Returned value was: None
+[2020-08-04 20:47:14,012] {{logging_mixin.py:95}} time [[34m2020-08-04 20:47:14,011[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+
+--------------------------------------------------------------------------------
+Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-27T00:00:00+00:00
+Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-27T00:00:00+00:00', '--job_id', '23', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmpmku243n1']
+Job 23: Subtask clean_raw_csv [2020-08-04 20:52:50,416] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1559
+Job 23: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+Job 23: Subtask clean_raw_csv   """)
+Job 23: Subtask clean_raw_csv [2020-08-04 20:52:55,444] {{__init__.py:51}} INFO - Using executor LocalExecutor
+Job 23: Subtask clean_raw_csv [2020-08-04 20:53:08,845] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+Job 23: Subtask clean_raw_csv [2020-08-04 20:53:09,773] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [running]> on host 6a822f9627d0
+Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-27T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-27T00:00:00+00:00
+Done. Returned value was: None
+[[34m2020-08-04 20:53:26,198[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+message ----> Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+message ----> Dependencies all met for <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [queued]>
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Starting attempt 1 of 2
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Executing <Task(PythonOperator): clean_raw_csv> on 2020-07-27T00:00:00+00:00
+message ----> Running: ['airflow', 'run', 'store_DAG', 'clean_raw_csv', '2020-07-27T00:00:00+00:00', '--job_id', '19', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmpf8xgqais']
+message ----> Job 19: Subtask clean_raw_csv [2020-08-04 21:11:00,115] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=2073
+message ----> Job 19: Subtask clean_raw_csv /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+message ----> Job 19: Subtask clean_raw_csv   """)
+message ----> Job 19: Subtask clean_raw_csv [2020-08-04 21:11:06,098] {{__init__.py:51}} INFO - Using executor LocalExecutor
+message ----> Job 19: Subtask clean_raw_csv [2020-08-04 21:11:14,353] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+message ----> Job 19: Subtask clean_raw_csv [2020-08-04 21:11:14,635] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.clean_raw_csv 2020-07-27T00:00:00+00:00 [running]> on host 0885e5a330eb
+message ----> Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=clean_raw_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-27T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-27T00:00:00+00:00
+message ----> Done. Returned value was: None
+message ----> [[34m2020-08-04 21:11:25,980[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

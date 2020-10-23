@@ -1,0 +1,29 @@
+[2020-07-30 18:51:16,111] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.transform 2020-07-30T18:50:42.348981+00:00 [queued]>
+[2020-07-30 18:51:16,136] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.transform 2020-07-30T18:50:42.348981+00:00 [queued]>
+[2020-07-30 18:51:16,136] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 18:51:16,137] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-07-30 18:51:16,137] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 18:51:16,154] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): transform> on 2020-07-30T18:50:42.348981+00:00
+[2020-07-30 18:51:16,155] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'transform', '2020-07-30T18:50:42.348981+00:00', '--job_id', '8', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmpxa3kdm5t']
+[2020-07-30 18:51:17,120] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform [2020-07-30 18:51:17,120] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=5830
+[2020-07-30 18:51:17,139] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-07-30 18:51:17,140] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform   """)
+[2020-07-30 18:51:17,331] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform [2020-07-30 18:51:17,330] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-07-30 18:51:18,117] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform [2020-07-30 18:51:18,116] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-07-30 18:51:18,129] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-07-30 18:51:18,130] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform   DeprecationWarning)
+[2020-07-30 18:51:18,131] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-07-30 18:51:18,132] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform   DeprecationWarning)
+[2020-07-30 18:51:18,613] {{base_task_runner.py:115}} INFO - Job 8: Subtask transform [2020-07-30 18:51:18,612] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.transform 2020-07-30T18:50:42.348981+00:00 [running]> on host 6097e8989e8b
+[2020-07-30 18:51:18,636] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T18:50:42.348981+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-07-30T18:50:42.348981+00:00
+[2020-07-30 18:51:18,636] {{logging_mixin.py:95}} INFO - mapping path =  /usr/local/airflow/dags
+[2020-07-30 18:51:18,637] {{logging_mixin.py:95}} INFO - currrect working direc mapping =  /usr/local/airflow
+[2020-07-30 18:51:18,637] {{logging_mixin.py:95}} INFO - mapping path files =  ('file ', <_io.BufferedReader name='./mapping.adm'>)
+[2020-07-30 18:51:19,392] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-07-30 18:51:21,007] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 18:51:21,007[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

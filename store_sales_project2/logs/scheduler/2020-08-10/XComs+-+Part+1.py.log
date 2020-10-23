@@ -1,0 +1,56 @@
+[2020-08-10 00:17:13,256] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:13,255] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=194
+[2020-08-10 00:17:13,395] | {{scheduler_job.py:146}} | INFO | Started process (PID=194) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:13,416] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:13,420] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:13,420] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:13,686] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:13,715] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:13,930] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.535 seconds
+[2020-08-10 00:17:18,527] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:18,523] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=241
+[2020-08-10 00:17:18,596] | {{scheduler_job.py:146}} | INFO | Started process (PID=241) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:18,637] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:18,644] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:18,643] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:19,150] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:19,165] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:19,348] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.753 seconds
+[2020-08-10 00:17:23,656] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:23,654] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=281
+[2020-08-10 00:17:23,682] | {{scheduler_job.py:146}} | INFO | Started process (PID=281) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:23,704] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:23,707] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:23,707] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:23,897] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:23,903] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:24,148] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.466 seconds
+[2020-08-10 00:17:28,858] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:28,853] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=326
+[2020-08-10 00:17:28,915] | {{scheduler_job.py:146}} | INFO | Started process (PID=326) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:28,958] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:28,967] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:28,964] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:29,362] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:29,381] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:29,546] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.633 seconds
+[2020-08-10 00:17:34,019] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:34,012] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=366
+[2020-08-10 00:17:34,056] | {{scheduler_job.py:146}} | INFO | Started process (PID=366) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:34,095] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:34,105] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:34,104] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:34,778] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:34,784] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:35,045] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.989 seconds
+[2020-08-10 00:17:39,153] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:39,152] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=406
+[2020-08-10 00:17:39,173] | {{scheduler_job.py:146}} | INFO | Started process (PID=406) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:39,180] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:39,182] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:39,182] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:39,265] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:39,273] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:39,362] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.189 seconds
+[2020-08-10 00:17:43,200] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:43,200] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=446
+[2020-08-10 00:17:43,205] | {{scheduler_job.py:146}} | INFO | Started process (PID=446) to work on /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:43,209] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/XComs+-+Part+1.py for tasks to queue
+[2020-08-10 00:17:43,209] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:43,209] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:43,279] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:43,284] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['simple_xcom']) retrieved from /usr/local/airflow/dags/XComs+-+Part+1.py
+[2020-08-10 00:17:43,361] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/XComs+-+Part+1.py took 0.156 seconds

@@ -1,0 +1,84 @@
+[2020-08-10 00:17:12,210] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,210] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=177
+[2020-08-10 00:17:12,214] | {{scheduler_job.py:146}} | INFO | Started process (PID=177) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:12,235] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:12,237] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,237] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:12,331] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:12,397] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.182 seconds
+[2020-08-10 00:17:14,400] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:14,394] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=204
+[2020-08-10 00:17:14,460] | {{scheduler_job.py:146}} | INFO | Started process (PID=204) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:14,507] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:14,513] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:14,512] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:14,712] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:15,094] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.634 seconds
+[2020-08-10 00:17:17,475] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:17,475] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=233
+[2020-08-10 00:17:17,485] | {{scheduler_job.py:146}} | INFO | Started process (PID=233) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:17,499] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:17,502] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:17,501] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:17,798] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:18,009] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.524 seconds
+[2020-08-10 00:17:19,652] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:19,648] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=249
+[2020-08-10 00:17:19,687] | {{scheduler_job.py:146}} | INFO | Started process (PID=249) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:19,714] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:19,719] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:19,718] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:19,998] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:20,492] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.804 seconds
+[2020-08-10 00:17:22,641] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:22,638] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=271
+[2020-08-10 00:17:22,666] | {{scheduler_job.py:146}} | INFO | Started process (PID=271) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:22,683] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:22,686] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:22,686] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:22,882] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:23,191] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.526 seconds
+[2020-08-10 00:17:24,748] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:24,745] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=289
+[2020-08-10 00:17:24,797] | {{scheduler_job.py:146}} | INFO | Started process (PID=289) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:24,829] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:24,834] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:24,833] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:25,007] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:25,453] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.655 seconds
+[2020-08-10 00:17:27,740] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:27,734] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=316
+[2020-08-10 00:17:27,820] | {{scheduler_job.py:146}} | INFO | Started process (PID=316) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:27,875] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:27,881] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:27,881] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:28,082] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:28,522] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.703 seconds
+[2020-08-10 00:17:29,869] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:29,867] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=334
+[2020-08-10 00:17:29,890] | {{scheduler_job.py:146}} | INFO | Started process (PID=334) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:29,908] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:29,910] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:29,910] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:30,050] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:30,192] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.302 seconds
+[2020-08-10 00:17:32,934] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:32,932] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=356
+[2020-08-10 00:17:32,972] | {{scheduler_job.py:146}} | INFO | Started process (PID=356) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:33,014] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:33,019] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:33,018] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:33,332] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:33,492] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.520 seconds
+[2020-08-10 00:17:36,001] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:35,999] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=376
+[2020-08-10 00:17:36,042] | {{scheduler_job.py:146}} | INFO | Started process (PID=376) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:36,089] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:36,098] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:36,097] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:36,314] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:36,691] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.650 seconds
+[2020-08-10 00:17:38,206] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:38,204] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=396
+[2020-08-10 00:17:38,227] | {{scheduler_job.py:146}} | INFO | Started process (PID=396) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:38,246] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:38,252] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:38,251] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:38,490] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:38,667] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.440 seconds
+[2020-08-10 00:17:40,157] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:40,157] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=416
+[2020-08-10 00:17:40,163] | {{scheduler_job.py:146}} | INFO | Started process (PID=416) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:40,166] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:40,167] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:40,167] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:40,216] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:40,255] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.092 seconds
+[2020-08-10 00:17:42,188] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:42,188] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=436
+[2020-08-10 00:17:42,192] | {{scheduler_job.py:146}} | INFO | Started process (PID=436) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:42,195] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:42,196] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:42,196] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:42,243] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:42,283] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.091 seconds
+[2020-08-10 00:17:44,241] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:44,240] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=456
+[2020-08-10 00:17:44,246] | {{scheduler_job.py:146}} | INFO | Started process (PID=456) to work on /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:44,253] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/store_DAG.py for tasks to queue
+[2020-08-10 00:17:44,254] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:44,254] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:44,337] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['store_DAG']) retrieved from /usr/local/airflow/dags/store_DAG.py
+[2020-08-10 00:17:44,404] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/store_DAG.py took 0.158 seconds

@@ -1,0 +1,152 @@
+[2020-08-10 00:17:11,259] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:11,259] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=167
+[2020-08-10 00:17:11,282] | {{scheduler_job.py:146}} | INFO | Started process (PID=167) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:11,304] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:11,310] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:11,310] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:11,459] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:11,454] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:11,461] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:11,488] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.206 seconds
+[2020-08-10 00:17:15,494] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:15,491] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=212
+[2020-08-10 00:17:15,539] | {{scheduler_job.py:146}} | INFO | Started process (PID=212) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:15,590] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:15,603] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:15,600] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:15,833] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:15,813] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:15,836] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:15,969] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.430 seconds
+[2020-08-10 00:17:17,459] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:17,458] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=231
+[2020-08-10 00:17:17,472] | {{scheduler_job.py:146}} | INFO | Started process (PID=231) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:17,481] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:17,483] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:17,483] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:17,971] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:17,897] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:17,981] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:18,161] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.688 seconds
+[2020-08-10 00:17:21,602] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,600] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=261
+[2020-08-10 00:17:21,632] | {{scheduler_job.py:146}} | INFO | Started process (PID=261) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:21,696] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:21,705] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,702] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:22,042] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:22,029] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:22,045] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:22,132] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.502 seconds
+[2020-08-10 00:17:26,686] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,686] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=301
+[2020-08-10 00:17:26,697] | {{scheduler_job.py:146}} | INFO | Started process (PID=301) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:26,717] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:26,721] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,721] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:26,964] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,906] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:26,970] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:27,151] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.454 seconds
+[2020-08-10 00:17:31,926] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:31,920] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=346
+[2020-08-10 00:17:31,996] | {{scheduler_job.py:146}} | INFO | Started process (PID=346) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:32,053] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:32,061] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:32,055] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:32,266] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:32,259] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:32,267] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:32,339] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.344 seconds
+[2020-08-10 00:17:37,238] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,234] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=386
+[2020-08-10 00:17:37,277] | {{scheduler_job.py:146}} | INFO | Started process (PID=386) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:37,289] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:37,290] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,290] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:37,794] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,779] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:37,798] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:37,931] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.654 seconds
+[2020-08-10 00:17:41,176] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,175] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=426
+[2020-08-10 00:17:41,179] | {{scheduler_job.py:146}} | INFO | Started process (PID=426) to work on /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:41,182] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/operators_DAG.py for tasks to queue
+[2020-08-10 00:17:41,182] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,182] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:41,234] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,229] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/operators_DAG.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/operators_DAG.py", line 43, in <module>
+    save_and_transform = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2020-08-10 00:17:41,235] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/operators_DAG.py
+[2020-08-10 00:17:41,258] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/operators_DAG.py took 0.080 seconds

@@ -1,0 +1,204 @@
+[2020-07-30 22:02:46,208] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+[2020-07-30 22:02:46,303] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+[2020-07-30 22:02:46,305] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:02:46,306] {{taskinstance.py:835}} INFO - Starting attempt 1 of 2
+[2020-07-30 22:02:46,306] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-30 22:02:46,370] {{taskinstance.py:855}} INFO - Executing <Task(MySqlOperator): create_mysql_table> on 2020-07-26T00:00:00+00:00
+[2020-07-30 22:02:46,375] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'store_DAG', 'create_mysql_table', '2020-07-26T00:00:00+00:00', '--job_id', '42', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmpsxwg1x4a']
+[2020-07-30 22:02:51,200] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table [2020-07-30 22:02:51,199] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=8041
+[2020-07-30 22:02:51,331] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-07-30 22:02:51,331] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   """)
+[2020-07-30 22:02:52,047] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table [2020-07-30 22:02:52,047] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-07-30 22:02:54,621] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table [2020-07-30 22:02:54,621] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-07-30 22:02:54,935] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table [2020-07-30 22:02:54,934] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [running]> on host 6097e8989e8b
+[2020-07-30 22:02:55,038] {{mysql_operator.py:61}} INFO - Executing: CREATE TABLE IF NOT EXISTS clean_store_transactions(STORE_ID varchar(50), STORE_LOCATION varchar(50), PRODUCT_CATEGORY varchar(50), PRODUCT_ID int, MRP float, CP float, DISCOUNT float, SP float, DATE date);
+[2020-07-30 22:02:55,116] {{taskinstance.py:1047}} ERROR - The conn_id `mysql_conn` isn't defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+    parameters=self.parameters)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+    with closing(self.get_conn()) as conn:
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+    conn = self.get_connection(self.mysql_conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+    conn = random.choice(list(cls.get_connections(conn_id)))
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+    conns = cls._get_connections_from_db(conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+    "The conn_id `{0}` isn't defined".format(conn_id))
+airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+[2020-07-30 22:02:55,132] {{taskinstance.py:1070}} INFO - Marking task as UP_FOR_RETRY
+[2020-07-30 22:02:55,250] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table Traceback (most recent call last):
+[2020-07-30 22:02:55,251] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/bin/airflow", line 32, in <module>
+[2020-07-30 22:02:55,251] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     args.func(args)
+[2020-07-30 22:02:55,252] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2020-07-30 22:02:55,253] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     return f(*args, **kwargs)
+[2020-07-30 22:02:55,253] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+[2020-07-30 22:02:55,254] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     _run(args, dag, ti)
+[2020-07-30 22:02:55,254] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+[2020-07-30 22:02:55,254] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     pool=args.pool,
+[2020-07-30 22:02:55,255] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-07-30 22:02:55,256] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     return func(*args, **kwargs)
+[2020-07-30 22:02:55,256] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+[2020-07-30 22:02:55,256] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     result = task_copy.execute(context=context)
+[2020-07-30 22:02:55,256] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+[2020-07-30 22:02:55,257] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     parameters=self.parameters)
+[2020-07-30 22:02:55,257] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+[2020-07-30 22:02:55,257] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     with closing(self.get_conn()) as conn:
+[2020-07-30 22:02:55,257] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+[2020-07-30 22:02:55,258] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     conn = self.get_connection(self.mysql_conn_id)
+[2020-07-30 22:02:55,258] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+[2020-07-30 22:02:55,258] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     conn = random.choice(list(cls.get_connections(conn_id)))
+[2020-07-30 22:02:55,259] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+[2020-07-30 22:02:55,259] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     conns = cls._get_connections_from_db(conn_id)
+[2020-07-30 22:02:55,259] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-07-30 22:02:55,259] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     return func(*args, **kwargs)
+[2020-07-30 22:02:55,260] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+[2020-07-30 22:02:55,260] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table     "The conn_id `{0}` isn't defined".format(conn_id))
+[2020-07-30 22:02:55,260] {{base_task_runner.py:115}} INFO - Job 42: Subtask create_mysql_table airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+[2020-07-30 22:02:56,036] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 22:02:56,036[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1mup_for_retry[0m. Taking the poison pill.[0m
+[2020-07-30 22:02:56,047] {{helpers.py:319}} INFO - Sending Signals.SIGTERM to GPID 8041
+[2020-07-30 22:02:56,128] {{helpers.py:297}} INFO - Process psutil.Process(pid=8041, status='terminated') (8041) terminated with exit code -15
+[2020-07-30 22:02:56,130] {{logging_mixin.py:95}} INFO - [[34m2020-07-30 22:02:56,130[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+
+--------------------------------------------------------------------------------
+Executing <Task(MySqlOperator): create_mysql_table> on 2020-07-26T00:00:00+00:00
+Running: ['airflow', 'run', 'store_DAG', 'create_mysql_table', '2020-07-26T00:00:00+00:00', '--job_id', '31', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmp9jwxk2wx']
+Job 31: Subtask create_mysql_table [2020-08-04 20:54:23,471] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1831
+Job 31: Subtask create_mysql_table /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+Job 31: Subtask create_mysql_table   """)
+Job 31: Subtask create_mysql_table [2020-08-04 20:54:31,829] {{__init__.py:51}} INFO - Using executor LocalExecutor
+Job 31: Subtask create_mysql_table [2020-08-04 20:54:49,945] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+Job 31: Subtask create_mysql_table [2020-08-04 20:54:51,807] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [running]> on host 6a822f9627d0
+Executing: CREATE TABLE IF NOT EXISTS clean_store_transactions(STORE_ID varchar(50), STORE_LOCATION varchar(50), PRODUCT_CATEGORY varchar(50), PRODUCT_ID int, MRP float, CP float, DISCOUNT float, SP float, DATE date);
+The conn_id `mysql_conn` isn't defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+    parameters=self.parameters)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+    with closing(self.get_conn()) as conn:
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+    conn = self.get_connection(self.mysql_conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+    conn = random.choice(list(cls.get_connections(conn_id)))
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+    conns = cls._get_connections_from_db(conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+    "The conn_id `{0}` isn't defined".format(conn_id))
+airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+Marking task as UP_FOR_RETRY
+Job 31: Subtask create_mysql_table Traceback (most recent call last):
+Job 31: Subtask create_mysql_table   File "/usr/local/bin/airflow", line 32, in <module>
+Job 31: Subtask create_mysql_table     args.func(args)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+Job 31: Subtask create_mysql_table     return f(*args, **kwargs)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+Job 31: Subtask create_mysql_table     _run(args, dag, ti)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+Job 31: Subtask create_mysql_table     pool=args.pool,
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+Job 31: Subtask create_mysql_table     return func(*args, **kwargs)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+Job 31: Subtask create_mysql_table     result = task_copy.execute(context=context)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+Job 31: Subtask create_mysql_table     parameters=self.parameters)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+Job 31: Subtask create_mysql_table     with closing(self.get_conn()) as conn:
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+Job 31: Subtask create_mysql_table     conn = self.get_connection(self.mysql_conn_id)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+Job 31: Subtask create_mysql_table     conn = random.choice(list(cls.get_connections(conn_id)))
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+Job 31: Subtask create_mysql_table     conns = cls._get_connections_from_db(conn_id)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+Job 31: Subtask create_mysql_table     return func(*args, **kwargs)
+Job 31: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+Job 31: Subtask create_mysql_table     "The conn_id `{0}` isn't defined".format(conn_id))
+Job 31: Subtask create_mysql_table airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+[[34m2020-08-04 20:54:54,447[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1mup_for_retry[0m. Taking the poison pill.[0m
+Sending Signals.SIGTERM to GPID 1831
+Process psutil.Process(pid=1831, status='terminated') (1831) terminated with exit code -15
+[[34m2020-08-04 20:54:54,956[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+message ----> Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+message ----> Dependencies all met for <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [queued]>
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Starting attempt 1 of 2
+message ----> 
+--------------------------------------------------------------------------------
+message ----> Executing <Task(MySqlOperator): create_mysql_table> on 2020-07-26T00:00:00+00:00
+message ----> Running: ['airflow', 'run', 'store_DAG', 'create_mysql_table', '2020-07-26T00:00:00+00:00', '--job_id', '39', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmp__e88jkg']
+message ----> Job 39: Subtask create_mysql_table [2020-08-04 21:12:22,955] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=2444
+message ----> Job 39: Subtask create_mysql_table /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+message ----> Job 39: Subtask create_mysql_table   """)
+message ----> Job 39: Subtask create_mysql_table [2020-08-04 21:12:27,581] {{__init__.py:51}} INFO - Using executor LocalExecutor
+message ----> Job 39: Subtask create_mysql_table [2020-08-04 21:12:33,057] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+message ----> Job 39: Subtask create_mysql_table [2020-08-04 21:12:33,334] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.create_mysql_table 2020-07-26T00:00:00+00:00 [running]> on host 0885e5a330eb
+message ----> Executing: CREATE TABLE IF NOT EXISTS clean_store_transactions(STORE_ID varchar(50), STORE_LOCATION varchar(50), PRODUCT_CATEGORY varchar(50), PRODUCT_ID int, MRP float, CP float, DISCOUNT float, SP float, DATE date);
+message ----> The conn_id `mysql_conn` isn't defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+    parameters=self.parameters)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+    with closing(self.get_conn()) as conn:
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+    conn = self.get_connection(self.mysql_conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+    conn = random.choice(list(cls.get_connections(conn_id)))
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+    conns = cls._get_connections_from_db(conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+    "The conn_id `{0}` isn't defined".format(conn_id))
+airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+message ----> Marking task as UP_FOR_RETRY
+message ----> Job 39: Subtask create_mysql_table Traceback (most recent call last):
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/bin/airflow", line 32, in <module>
+message ----> Job 39: Subtask create_mysql_table     args.func(args)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+message ----> Job 39: Subtask create_mysql_table     return f(*args, **kwargs)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+message ----> Job 39: Subtask create_mysql_table     _run(args, dag, ti)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+message ----> Job 39: Subtask create_mysql_table     pool=args.pool,
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+message ----> Job 39: Subtask create_mysql_table     return func(*args, **kwargs)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 922, in _run_raw_task
+message ----> Job 39: Subtask create_mysql_table     result = task_copy.execute(context=context)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/operators/mysql_operator.py", line 67, in execute
+message ----> Job 39: Subtask create_mysql_table     parameters=self.parameters)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+message ----> Job 39: Subtask create_mysql_table     with closing(self.get_conn()) as conn:
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/mysql_hook.py", line 72, in get_conn
+message ----> Job 39: Subtask create_mysql_table     conn = self.get_connection(self.mysql_conn_id)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+message ----> Job 39: Subtask create_mysql_table     conn = random.choice(list(cls.get_connections(conn_id)))
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+message ----> Job 39: Subtask create_mysql_table     conns = cls._get_connections_from_db(conn_id)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+message ----> Job 39: Subtask create_mysql_table     return func(*args, **kwargs)
+message ----> Job 39: Subtask create_mysql_table   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+message ----> Job 39: Subtask create_mysql_table     "The conn_id `{0}` isn't defined".format(conn_id))
+message ----> Job 39: Subtask create_mysql_table airflow.exceptions.AirflowException: The conn_id `mysql_conn` isn't defined
+message ----> [[34m2020-08-04 21:12:35,884[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1mup_for_retry[0m. Taking the poison pill.[0m
+message ----> Sending Signals.SIGTERM to GPID 2444
+message ----> Process psutil.Process(pid=2444, status='terminated') (2444) terminated with exit code -15
+message ----> [[34m2020-08-04 21:12:36,092[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

@@ -1,0 +1,26 @@
+[2020-08-03 01:45:10,069] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-08-03T01:45:05.285433+00:00 [queued]>
+[2020-08-03 01:45:10,078] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-08-03T01:45:05.285433+00:00 [queued]>
+[2020-08-03 01:45:10,081] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:45:10,083] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-03 01:45:10,083] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:45:10,117] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-08-03T01:45:05.285433+00:00
+[2020-08-03 01:45:10,118] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-08-03T01:45:05.285433+00:00', '--job_id', '3', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmpzvabfzvb']
+[2020-08-03 01:45:11,506] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-03 01:45:11,506] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=529
+[2020-08-03 01:45:11,538] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-03 01:45:11,539] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   """)
+[2020-08-03 01:45:11,774] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-03 01:45:11,773] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-03 01:45:12,656] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-03 01:45:12,655] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-03 01:45:12,673] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:45:12,674] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:45:12,676] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:45:12,676] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:45:13,414] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-03 01:45:13,413] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-08-03T01:45:05.285433+00:00 [running]> on host 721e7136c38e
+[2020-08-03 01:45:13,486] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-08-03T01:45:05.285433+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-08-03T01:45:05.285433+00:00
+[2020-08-03 01:45:13,684] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-03 01:45:15,049] {{logging_mixin.py:95}} INFO - [[34m2020-08-03 01:45:15,047[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

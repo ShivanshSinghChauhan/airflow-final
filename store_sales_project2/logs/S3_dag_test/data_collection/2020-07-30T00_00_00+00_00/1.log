@@ -1,0 +1,205 @@
+[2020-08-03 01:45:09,515] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 01:45:09,547] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 01:45:09,550] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:45:09,551] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-03 01:45:09,552] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:45:09,606] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-03 01:45:09,607] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmpqof_v7_f']
+[2020-08-03 01:45:11,289] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:45:11,289] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=524
+[2020-08-03 01:45:11,312] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-03 01:45:11,313] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-03 01:45:11,455] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:45:11,454] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-03 01:45:11,923] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:45:11,923] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-03 01:45:11,943] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:45:11,943] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:45:11,944] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:45:11,945] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:45:12,478] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:45:12,477] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host 721e7136c38e
+[2020-08-03 01:45:12,534] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-03 01:45:13,090] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-03 01:45:14,454] {{logging_mixin.py:95}} INFO - [[34m2020-08-03 01:45:14,453[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-03 01:53:25,536] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 01:53:25,555] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 01:53:25,556] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:53:25,556] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-03 01:53:25,556] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 01:53:25,593] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-03 01:53:25,594] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmp14odeyjs']
+[2020-08-03 01:53:26,822] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:53:26,821] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=505
+[2020-08-03 01:53:26,857] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-03 01:53:26,857] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-03 01:53:27,182] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:53:27,180] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-03 01:53:27,705] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:53:27,704] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-03 01:53:27,730] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:53:27,731] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:53:27,733] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 01:53:27,734] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 01:53:28,540] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 01:53:28,539] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host a40047db1ca5
+[2020-08-03 01:53:28,579] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-03 01:53:28,772] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-03 01:53:30,507] {{logging_mixin.py:95}} INFO - [[34m2020-08-03 01:53:30,506[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-03 02:20:35,781] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 02:20:35,801] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-03 02:20:35,802] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 02:20:35,803] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-03 02:20:35,803] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-03 02:20:35,836] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-03 02:20:35,837] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmpu9dn6yzd']
+[2020-08-03 02:20:37,323] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 02:20:37,322] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=478
+[2020-08-03 02:20:37,445] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-03 02:20:37,445] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-03 02:20:37,920] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 02:20:37,918] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-03 02:20:39,040] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 02:20:39,039] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-03 02:20:39,060] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 02:20:39,061] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 02:20:39,063] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-03 02:20:39,064] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-03 02:20:39,651] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-03 02:20:39,650] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host 483befe13816
+[2020-08-03 02:20:39,700] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-03 02:20:39,865] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-03 02:20:40,819] {{logging_mixin.py:95}} INFO - [[34m2020-08-03 02:20:40,813[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 17:35:51,819] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:35:51,840] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:35:51,845] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:35:51,846] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-04 17:35:51,850] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:35:51,887] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-04 17:35:51,888] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '3', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmp74_palhg']
+[2020-08-04 17:35:55,512] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-04 17:35:55,511] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=3125
+[2020-08-04 17:35:55,673] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 17:35:55,674] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   """)
+[2020-08-04 17:35:56,140] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-04 17:35:56,137] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 17:35:57,255] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-04 17:35:57,254] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-04 17:35:57,272] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:35:57,273] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:35:57,274] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:35:57,275] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:35:58,948] {{base_task_runner.py:115}} INFO - Job 3: Subtask data_collection [2020-08-04 17:35:58,946] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host 7a220b0e8326
+[2020-08-04 17:35:59,136] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-04 17:35:59,901] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-04 17:36:01,685] {{logging_mixin.py:95}} INFO - [[34m2020-08-04 17:36:01,685[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 17:41:15,914] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:41:15,937] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:41:15,938] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:41:15,939] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-04 17:41:15,940] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:41:15,980] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-04 17:41:15,981] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmp8clt2ng2']
+[2020-08-04 17:41:17,420] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:41:17,419] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=700
+[2020-08-04 17:41:17,448] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 17:41:17,449] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-04 17:41:17,643] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:41:17,642] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 17:41:18,830] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:41:18,827] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-04 17:41:18,878] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:41:18,882] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:41:18,889] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:41:18,890] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:41:20,231] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:41:20,231] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host aa2da23cfe12
+[2020-08-04 17:41:20,279] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-04 17:41:20,497] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-04 17:41:20,857] {{logging_mixin.py:95}} INFO - [[34m2020-08-04 17:41:20,856[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 17:49:02,235] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:49:02,246] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 17:49:02,246] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:49:02,247] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-04 17:49:02,247] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 17:49:02,273] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-04 17:49:02,273] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmpuahb4aet']
+[2020-08-04 17:49:03,582] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:49:03,572] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=581
+[2020-08-04 17:49:03,695] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 17:49:03,696] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-04 17:49:04,016] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:49:04,015] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 17:49:04,837] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:49:04,837] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-04 17:49:04,853] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:49:04,853] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:49:04,854] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 17:49:04,855] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 17:49:06,230] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 17:49:06,230] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host 120458849fab
+[2020-08-04 17:49:06,264] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-04 17:49:06,461] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-04 17:49:07,318] {{logging_mixin.py:95}} INFO - [[34m2020-08-04 17:49:07,318[0m] {{[34mlocal_task_job.py:[0m172}} WARNING[0m - State of this instance has been externally set to [1msuccess[0m. Taking the poison pill.[0m
+[2020-08-04 17:49:07,345] {{helpers.py:319}} INFO - Sending Signals.SIGTERM to GPID 581
+[2020-08-04 17:49:07,376] {{helpers.py:297}} INFO - Process psutil.Process(pid=581, status='terminated') (581) terminated with exit code -15
+[2020-08-04 17:49:07,377] {{logging_mixin.py:95}} INFO - [[34m2020-08-04 17:49:07,377[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 18:55:37,954] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 18:55:37,964] {{taskinstance.py:616}} INFO - Dependencies all met for <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [queued]>
+[2020-08-04 18:55:37,964] {{taskinstance.py:834}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 18:55:37,964] {{taskinstance.py:835}} INFO - Starting attempt 1 of 1
+[2020-08-04 18:55:37,965] {{taskinstance.py:836}} INFO - 
+--------------------------------------------------------------------------------
+[2020-08-04 18:55:37,980] {{taskinstance.py:855}} INFO - Executing <Task(PythonOperator): data_collection> on 2020-07-30T00:00:00+00:00
+[2020-08-04 18:55:37,981] {{base_task_runner.py:133}} INFO - Running: ['airflow', 'run', 'S3_dag_test', 'data_collection', '2020-07-30T00:00:00+00:00', '--job_id', '2', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test_s3.py', '--cfg_path', '/tmp/tmp10qed3je']
+[2020-08-04 18:55:40,059] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 18:55:40,058] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=541
+[2020-08-04 18:55:40,089] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-04 18:55:40,090] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   """)
+[2020-08-04 18:55:40,273] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 18:55:40,272] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-04 18:55:40,958] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 18:55:40,957] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-04 18:55:40,973] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 18:55:40,974] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 18:55:40,975] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2020-08-04 18:55:40,976] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection   DeprecationWarning)
+[2020-08-04 18:55:41,999] {{base_task_runner.py:115}} INFO - Job 2: Subtask data_collection [2020-08-04 18:55:41,999] {{cli.py:516}} INFO - Running <TaskInstance: S3_dag_test.data_collection 2020-07-30T00:00:00+00:00 [running]> on host 380a969143ef
+[2020-08-04 18:55:42,036] {{python_operator.py:105}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=S3_dag_test
+AIRFLOW_CTX_TASK_ID=data_collection
+AIRFLOW_CTX_EXECUTION_DATE=2020-07-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-07-30T00:00:00+00:00
+[2020-08-04 18:55:42,243] {{python_operator.py:114}} INFO - Done. Returned value was: None
+[2020-08-04 18:55:42,983] {{logging_mixin.py:95}} INFO - [[34m2020-08-04 18:55:42,982[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m
+[2020-08-04 20:17:29,940]
+[2020-08-04 20:17:29,948]
+[2020-08-04 20:17:29,949]
+[2020-08-04 20:17:29,949]
+[2020-08-04 20:17:29,950]
+[2020-08-04 20:17:29,969]
+[2020-08-04 20:17:29,969]
+[2020-08-04 20:17:30,831]
+[2020-08-04 20:17:30,859]
+[2020-08-04 20:17:30,860]
+[2020-08-04 20:17:31,021]
+[2020-08-04 20:17:31,621]
+[2020-08-04 20:17:31,639]
+[2020-08-04 20:17:31,639]
+[2020-08-04 20:17:31,641]
+[2020-08-04 20:17:31,641]
+[2020-08-04 20:17:32,170]
+[2020-08-04 20:17:32,210]
+[2020-08-04 20:17:32,426]
+[2020-08-04 20:17:34,936]

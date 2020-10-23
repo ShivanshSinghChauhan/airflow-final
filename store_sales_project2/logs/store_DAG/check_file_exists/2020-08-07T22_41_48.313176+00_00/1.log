@@ -1,0 +1,28 @@
+[2020-08-07 22:42:20,052] | {{taskinstance.py:616}} | INFO | Dependencies all met for <TaskInstance: store_DAG.check_file_exists 2020-08-07T22:41:48.313176+00:00 [queued]>
+[2020-08-07 22:42:20,143] | {{taskinstance.py:616}} | INFO | Dependencies all met for <TaskInstance: store_DAG.check_file_exists 2020-08-07T22:41:48.313176+00:00 [queued]>
+[2020-08-07 22:42:20,144] | {{taskinstance.py:834}} | INFO | 
+--------------------------------------------------------------------------------
+[2020-08-07 22:42:20,144] | {{taskinstance.py:835}} | INFO | Starting attempt 1 of 3
+[2020-08-07 22:42:20,145] | {{taskinstance.py:836}} | INFO | 
+--------------------------------------------------------------------------------
+[2020-08-07 22:42:20,273] | {{taskinstance.py:855}} | INFO | Executing <Task(BashOperator): check_file_exists> on 2020-08-07T22:41:48.313176+00:00
+[2020-08-07 22:42:20,282] | {{base_task_runner.py:133}} | INFO | Running: ['airflow', 'run', 'store_DAG', 'check_file_exists', '2020-08-07T22:41:48.313176+00:00', '--job_id', '20', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/store_DAG.py', '--cfg_path', '/tmp/tmpknlyn8md']
+[2020-08-07 22:42:31,136] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists [2020-08-07 22:42:31,128] {{settings.py:213}} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=4400
+[2020-08-07 22:42:31,353] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2020-08-07 22:42:31,354] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists   """)
+[2020-08-07 22:42:32,402] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists [2020-08-07 22:42:32,395] {{__init__.py:51}} INFO - Using executor LocalExecutor
+[2020-08-07 22:42:35,029] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists [2020-08-07 22:42:35,018] {{dagbag.py:90}} INFO - Filling up the DagBag from /usr/local/airflow/dags/store_DAG.py
+[2020-08-07 22:42:35,367] | {{base_task_runner.py:115}} | INFO | Job 20: Subtask check_file_exists [2020-08-07 22:42:35,366] {{cli.py:516}} INFO - Running <TaskInstance: store_DAG.check_file_exists 2020-08-07T22:41:48.313176+00:00 [running]> on host 5f4c3a456296
+[2020-08-07 22:42:35,532] | {{bash_operator.py:81}} | INFO | Tmp dir root location: 
+ /tmp
+[2020-08-07 22:42:35,552] | {{bash_operator.py:91}} | INFO | Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=store_DAG
+AIRFLOW_CTX_TASK_ID=check_file_exists
+AIRFLOW_CTX_EXECUTION_DATE=2020-08-07T22:41:48.313176+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-08-07T22:41:48.313176+00:00
+[2020-08-07 22:42:35,558] | {{bash_operator.py:105}} | INFO | Temporary script location: /tmp/airflowtmpvtydu1hp/check_file_existsrxflm7n3
+[2020-08-07 22:42:35,559] | {{bash_operator.py:115}} | INFO | Running command: shasum ~/store_files_airflow/raw_store_transactions.csv
+[2020-08-07 22:42:35,632] | {{bash_operator.py:124}} | INFO | Output:
+[2020-08-07 22:42:36,054] | {{bash_operator.py:128}} | INFO | e9e298e9629d72f3255b4838ba07bd220150a146  /usr/local/airflow/store_files_airflow/raw_store_transactions.csv
+[2020-08-07 22:42:36,061] | {{bash_operator.py:132}} | INFO | Command exited with return code 0
+[2020-08-07 22:42:39,953] | {{logging_mixin.py:95}} | INFO | [[34m2020-08-07 22:42:39,952[0m] {{[34mlocal_task_job.py:[0m105}} INFO[0m - Task exited with return code 0[0m

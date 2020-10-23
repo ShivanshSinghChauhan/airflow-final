@@ -1,0 +1,70 @@
+[2020-08-10 00:17:13,393] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:13,393] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=197
+[2020-08-10 00:17:13,432] | {{scheduler_job.py:146}} | INFO | Started process (PID=197) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:13,465] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:13,471] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:13,471] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:13,498] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:13,510] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:14,396] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:14,677] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 1.245 seconds
+[2020-08-10 00:17:18,636] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:18,633] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=243
+[2020-08-10 00:17:18,709] | {{scheduler_job.py:146}} | INFO | Started process (PID=243) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:18,787] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:18,798] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:18,798] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:18,907] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:18,937] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:20,867] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:21,051] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 2.343 seconds
+[2020-08-10 00:17:23,645] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:23,644] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=283
+[2020-08-10 00:17:23,668] | {{scheduler_job.py:146}} | INFO | Started process (PID=283) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:23,693] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:23,698] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:23,697] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:23,785] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:23,831] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:25,899] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:26,181] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 2.514 seconds
+[2020-08-10 00:17:28,928] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:28,923] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=327
+[2020-08-10 00:17:28,976] | {{scheduler_job.py:146}} | INFO | Started process (PID=327) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:29,024] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:29,038] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:29,033] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:29,180] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:29,223] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:30,909] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:31,133] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 2.158 seconds
+[2020-08-10 00:17:33,968] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:33,964] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=367
+[2020-08-10 00:17:34,012] | {{scheduler_job.py:146}} | INFO | Started process (PID=367) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:34,038] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:34,045] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:34,044] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:34,107] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:34,124] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:35,722] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:35,827] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 1.815 seconds
+[2020-08-10 00:17:39,165] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:39,164] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=407
+[2020-08-10 00:17:39,174] | {{scheduler_job.py:146}} | INFO | Started process (PID=407) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:39,183] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:39,184] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:39,184] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:39,204] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:39,208] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:39,671] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:39,710] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 0.536 seconds
+[2020-08-10 00:17:43,206] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:43,206] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=448
+[2020-08-10 00:17:43,210] | {{scheduler_job.py:146}} | INFO | Started process (PID=448) to work on /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:43,215] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/test_s3.py for tasks to queue
+[2020-08-10 00:17:43,217] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:43,216] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:43,233] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:43,236] | {{logging_mixin.py:95}} | WARNING | /usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py:425: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2020-08-10 00:17:43,805] | {{scheduler_job.py:1505}} | INFO | DAG(s) dict_keys(['S3_dag_test']) retrieved from /usr/local/airflow/dags/test_s3.py
+[2020-08-10 00:17:43,861] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/test_s3.py took 0.651 seconds

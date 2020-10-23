@@ -1,0 +1,154 @@
+[2020-08-10 00:17:12,205] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,204] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=175
+[2020-08-10 00:17:12,219] | {{scheduler_job.py:146}} | INFO | Started process (PID=175) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:12,230] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:12,236] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,236] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:12,261] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,260] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:12,276] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:12,262] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:12,277] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:12,350] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.131 seconds
+[2020-08-10 00:17:16,473] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:16,469] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=221
+[2020-08-10 00:17:16,505] | {{scheduler_job.py:146}} | INFO | Started process (PID=221) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:16,529] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:16,536] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:16,534] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:16,623] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:16,621] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:16,656] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:16,640] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:16,659] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:16,871] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.366 seconds
+[2020-08-10 00:17:21,660] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,659] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=263
+[2020-08-10 00:17:21,681] | {{scheduler_job.py:146}} | INFO | Started process (PID=263) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:21,699] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:21,703] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,702] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:21,733] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,732] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:21,750] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:21,734] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:21,752] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:21,964] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.282 seconds
+[2020-08-10 00:17:26,713] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,708] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=303
+[2020-08-10 00:17:26,731] | {{scheduler_job.py:146}} | INFO | Started process (PID=303) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:26,748] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:26,751] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,751] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:26,836] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,836] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:26,858] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:26,837] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:26,860] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:27,042] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.311 seconds
+[2020-08-10 00:17:31,912] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:31,910] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=348
+[2020-08-10 00:17:31,933] | {{scheduler_job.py:146}} | INFO | Started process (PID=348) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:31,959] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:31,965] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:31,964] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:32,007] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:32,006] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:32,040] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:32,011] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:32,045] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:32,154] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.221 seconds
+[2020-08-10 00:17:37,212] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,205] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=387
+[2020-08-10 00:17:37,255] | {{scheduler_job.py:146}} | INFO | Started process (PID=387) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:37,278] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:37,279] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,279] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:37,323] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,319] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:37,371] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:37,325] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:37,373] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:37,598] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.344 seconds
+[2020-08-10 00:17:41,176] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,175] | {{settings.py:213}} | INFO | settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=428
+[2020-08-10 00:17:41,179] | {{scheduler_job.py:146}} | INFO | Started process (PID=428) to work on /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:41,182] | {{scheduler_job.py:1493}} | INFO | Processing file /usr/local/airflow/dags/logging_config.py for tasks to queue
+[2020-08-10 00:17:41,182] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,182] | {{dagbag.py:90}} | INFO | Filling up the DagBag from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:41,197] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,197] | {{configuration.py:293}} | WARNING | section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:41,202] | {{logging_mixin.py:95}} | INFO | [2020-08-10 00:17:41,198] | {{dagbag.py:205}} | ERROR | Failed to import: /usr/local/airflow/dags/logging_config.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/logging_config.py", line 32, in <module>
+    LOG_LEVEL: str = conf.get('logging', 'LOGGING_LEVEL').upper()
+  File "/usr/local/lib/python3.7/site-packages/airflow/configuration.py", line 298, in get
+    "in config".format(section=section, key=key))
+airflow.exceptions.AirflowConfigException: section/key [logging/logging_level] not found in config
+[2020-08-10 00:17:41,202] | {{scheduler_job.py:1507}} | WARNING | No viable dags retrieved from /usr/local/airflow/dags/logging_config.py
+[2020-08-10 00:17:41,223] | {{scheduler_job.py:152}} | INFO | Processing /usr/local/airflow/dags/logging_config.py took 0.044 seconds
